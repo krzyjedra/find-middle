@@ -1,0 +1,51 @@
+= Find Middle
+:numbered:
+:toc: preamble
+:toc-title: Table of contents
+
+App returns the middle list element.
+In case of list having even number of elements the left middle element is returned.
+
+I was not able to fix the bug in @tailrec, so I made different version of code.
+
+== Dependencies
+
+You are going to need the following:
+
+* Java 8+
+* Scala 2.13+
+
+== How to run
+
+* Clone the repository and run.
+
+----
+git clone
+https://github.com/krzyjedra/find-middle.git
+----
+
+== Example of usage
+
+You can check such input:
+
+----
+findMiddleElementMine(List(1,2,3,4))
+----
+
+As an output you will receive:
+
+----
+Some(2)
+----
+
+You can find more examples in test.
+
+== Troubleshooting
+
+* Please remember to use round brackets for List arguments, eg.
+()
+* If ScalaTest is not working please check your `build.sbt` file
+
+libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.12"
+
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.12" % "test"
